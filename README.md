@@ -21,7 +21,7 @@ Dependencies:
 
 Usage:
 
-`python3 csv-parser.py sample-with-broken.csv`
+`python3 csv-parser.py data/sample-with-broken-utf8.csv`
 
 After running, the file "sample-fixed.csv" is created.
 
