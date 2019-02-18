@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append('./')
 from csv_parser import *
 
 class MyFirstTests(unittest.TestCase):
