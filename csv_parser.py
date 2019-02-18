@@ -72,19 +72,23 @@ def normalize_notes(note):
 if __name__ == "__main__":
     """ Open the input file as text, expecting utf-8, and use the Python error default replacement handler"""
     inputFile = open(sys.argv[1], 'rt', encoding="utf-8", errors="replace")
-    outputFile = open("sample-fixed.csv", "w+")
+    #outputFile = open("sample-fixed.csv", "w+")
     reader = csv.reader(inputFile)
-    writer = csv.writer(outputFile)
+    writer = csv.writer(sys.stdout)
     writer.writerow(["Timestamp","Address","ZIP","FullName","FooDuration","BarDuration","TotalDuration","Notes"])
     next(reader) # Skip header / first row
     for row in reader:
-        nd = convert_to_iso8601(row[0])
-        na = normalize_addr(row[1])
-        nz = normalize_zipcode(row[2])
-        nn = normalize_name(row[3])
-        d1 = normalize_duration(row[4])
-        d2 = normalize_duration(row[5])
-        td = total_duration(row[4], row[5])
-        note = normalize_notes(row[7])
-        writer.writerow([nd, na, nz, nn, d1, d2, td, note])
-    outputFile.close()
+        try:
+            nd = convert_to_iso8601(row[0])
+            na = normalize_addr(row[1])
+            nz = normalize_zipcode(row[2])
+            nn = normalize_name(row[3])
+            d1 = normalize_duration(row[4])
+            d2 = normalize_duration(row[5])
+            td = total_duration(row[4], row[5])
+            note = normalize_notes(row[7])
+            writer.writerow([nd, na, nz, nn, d1, d2, td, note])
+        except:
+            """ Drop row on error """
+            pass
+    #outputFile.close()
