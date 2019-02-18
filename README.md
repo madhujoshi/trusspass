@@ -7,9 +7,11 @@
 * Updates to Python3
 * Changes file open to a text reader expecting utf-8 and use default replacement error handler
 * Changes total duration to float format for consistency with other duration fields (reuse normalize_duration)
-* Writes output to file
 * Includes column names in output
-* Uses clearer variable names
+* Drops row on date error
+* Adds sample CSV with date error
+* Adds tests
+* (Writes output to file)(optional, commented out)
 
 (Changes have been submitted as a Pull Request)
 
