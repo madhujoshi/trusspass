@@ -1,3 +1,32 @@
+# README
+
+## This is a submission for a software engineering position at Truss.Works using Python 3
+
+### This submission was forked from @madhujoshi with the following changes:
+
+* Updates to Python3
+* Changes file open to a text reader expecting utf-8 and use default replacement error handler
+* Changes total duration to float format for consistency with other duration fields (reuse normalize_duration)
+* Writes output to file
+* Includes column names in output
+* Uses clearer variable names
+
+(Changes have been submitted as a Pull Request)
+
+Dependencies:
+
+`pip3 install pytz`
+
+Usage:
+
+`python3 csv-parser.py sample-with-broken.csv`
+
+After running, the file "sample-fixed.csv" is created.
+
+Tip: Use [CSVKit](https://csvkit.readthedocs.io/en/1.0.3/) `csvstat` to check the output and other cool things
+
+---
+
 _This is one of the steps in the Truss interview process. If you've
 stumbled upon this repository and are interested in a career with
 Truss, [check out our jobs page](https://truss.works/jobs)._
