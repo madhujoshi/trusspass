@@ -25,8 +25,6 @@ Usage:
 
 `python3 tests/tests.py`
 
-After running, the file "sample-fixed.csv" is created.
-
 Tip: Use `iconv` or [CSVKit](https://csvkit.readthedocs.io/en/1.0.3/) `csvstat` to check the output and other cool things
 
 ---
