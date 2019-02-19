@@ -25,8 +25,6 @@ Usage:
 
 `python3 tests/tests.py`
 
-Tip: Use `iconv` or [CSVKit](https://csvkit.readthedocs.io/en/1.0.3/) `csvstat` to check the output and other cool things
-
 ---
 
 _This is one of the steps in the Truss interview process. If you've
