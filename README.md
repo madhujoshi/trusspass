@@ -1,3 +1,32 @@
+# README
+
+## This is a submission for a software engineering position at Truss.Works using Python 3
+
+### This submission was forked from @madhujoshi with the following changes:
+
+* Updates to Python3
+* Changes file open to a text reader expecting utf-8 and uses default replacement error handler
+* Changes total duration to float format for consistency with other duration fields (reuses normalize_duration)
+* Includes column names in output
+* Drops row on date error
+* Adds sample CSV with date error
+* Adds tests
+* (Writes output to file)(optional, commented out)
+
+(Changes have been submitted as a Pull Request)
+
+Dependencies:
+
+`pip3 install pytz`
+
+Usage:
+
+`python3 csv_parser.py data/sample-with-broken-utf8.csv`
+
+`python3 tests/tests.py`
+
+---
+
 _This is one of the steps in the Truss interview process. If you've
 stumbled upon this repository and are interested in a career with
 Truss, [check out our jobs page](https://truss.works/jobs)._
@@ -18,13 +47,13 @@ on it. We're also aware that getting after-hours coding time can be
 challenging; we'd like a submission within a week and if you need more
 time please let us know.
 
-If you have any questions, please contact bizops@truss.works; we're
+If you have any questions, please contact hiring@truss.works; we're
 happy to help if you're not sure what we're asking for or if you have
 questions.
 
 ## How to submit your response
 
-Please send bizops@truss.works a link to a public git repository
+Please send hiring@truss.works a link to a public git repository
 (Github is fine) that contains your code and a README.md that tells us
 how to build and run it. Your code will be run on either macOS 10.13
 or Ubuntu 16.04 LTS, your choice.
